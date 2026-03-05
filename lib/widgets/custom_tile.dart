@@ -110,7 +110,7 @@ class RadioListDialog<T> extends StatelessWidget {
       constraints: subtitleBuilder != null ? const BoxConstraints(maxWidth: 320, minWidth: 320) : null,
       contentPadding: const EdgeInsets.symmetric(vertical: 12),
       content: Material(
-        type: BoxShape.rectangle,
+        type: MaterialType.transparency,
         child: SingleChildScrollView(
           child: RadioGroup<T>(
             onChanged: (v) => Navigator.of(context).pop(v ?? value),
@@ -151,7 +151,7 @@ class NormalListDialog<T> extends StatelessWidget {
       constraints: subtitleBuilder != null ? const BoxConstraints(maxWidth: 320, minWidth: 320) : null,
       contentPadding: const EdgeInsets.symmetric(vertical: 12),
       content: Material(
-        type: BoxShape.rectangle,
+        type: MaterialType.transparency,
         child: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.min,
